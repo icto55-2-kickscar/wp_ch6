@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+var Foo = function( name, nick ) {
+	  this.name = name;
+	  this.nick = nick;
+	  this.doFoo = function() {
+	    alert( "I'm " + this.name + ":" + this.nick );
+	  };
+}
+
+var foo = new Foo( "안대혁", "별명1" );
+foo.doFoo();
+
+var foo2 = new Foo( "둘리", "별명2" );
+foo2.doFoo();
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+var d = new Date();  // 현재 시간
+console.log( d );
+
+d = new Date();  // 현재 시간
+console.log( d.getMilliseconds() );
+
+d = new Date( 2000032131231 );  // 현재 시간
+console.log( d );
+
+
+var d = new Date(2013, 0, 28);  //2013 년 1월 28일  
+document.write(
+  " 년도: " + (d.getYear() + 1900) + "<br>" + 
+  " 월: " + (d.getMonth() + 1) + "<br>" + 
+  " 일은: " + d.getDate() + "<br>" + 
+  " 요일은: " + d.getDay() + "<br>" + 
+  " 시는: " + d.getHours() + "<br>" + 
+  " 분은: " + d.getMinutes() + "<br>" + 
+  " 초는: " + d.getSeconds() + "<br>" + 
+  " 밀리초: " + d.getMilliseconds() + "<br>" );
+ 
+d.setYear(2014);  // 2014년 세팅
+document.write(d + "<br>"); 
+
+d.setMonth( 11 ); // 12월 세팅
+document.write(d + "<br>");
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

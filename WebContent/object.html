@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+var employee1 = new Object();
+employee1.name = "홍길동";
+employee1.title = "과장";
+employee1.age = 50;
+
+employee1.showInfo = function() {
+  document.write( "이름 : " + this.name );
+  document.write( "<br>" );
+  document.write( "직책 : " + this.title ); 
+  document.write( "<br>" );
+} 
+employee1.showInfo();
+
+// 리터럴 객체 생성
+var employee2 = {};
+employee2.name = "둘리";
+employee2.title = "사원";
+
+// JSON 방식
+var employee3 = {
+		"name": "둘리",
+		"title": "사원",
+		showInfo: function() {
+			  document.write( "이름 : " + this.name );
+			  document.write( "<br>" );
+			  document.write( "직책 : " + this.title ); 
+			  document.write( "<br>" );			
+		}
+};
+
+employee3.showInfo();
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

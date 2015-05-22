@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+function mDown( element ) {
+	element.innerHTML = "버튼 때주세요.";
+	element.style.backgroundColor = "#ffff00";
+	element.style.fontWeight = "bold";
+}
+
+function mUp( element ) {
+	element.innerHTML = "버튼 눌러 주세요.";
+	element.style.backgroundColor = "#D94A38";
+}
+
+</script>
+</head>
+<body>
+<div 
+	onmousedown="mDown(this)" 
+	onmouseup="mUp(this)" 
+	style="background-color:#D94A38;width:90px;height:20px;padding:40px;">
+	버튼 눌러 주세요.
+</div>
+
+</body>
+</html>

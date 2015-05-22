@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+var str = "Hello, I'm a string!";
+console.log( "문자열 길이는 : " + str.length ); 
+
+/*
+for(var i = 0; i < str.length; i++) {
+ console.log( str[i] );
+}
+*/
+console.log( "첫 번째 문자열 " + " 두 번째 문자열" ); 
+
+var str = "number " + 5;
+console.log( str + " : " + typeof( str ) );
+
+str = 5 + "5";
+console.log( str + " : " + typeof( str ) );
+
+
+//부분문자열
+var str = "string1 string2 string3"
+console.log( str.length );
+
+var start = str.indexOf( 'string2' );
+console.log( start ); 
+console.log( str.substr( start ) );
+
+// 간단히,
+console.log( str.substr( str.indexOf( 'string2' ) ) );
+
+// str은 변하지 않는다.
+console.log( str );
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

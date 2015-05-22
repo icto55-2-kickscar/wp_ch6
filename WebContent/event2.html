@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+function loaded() {
+	var button = document.getElementById( "my-button" );
+	button.onclick = function() {
+		document.getElementById("demo").innerHTML = Date();
+	}
+	
+	button.onmouseover = function() {
+		document.getElementById("demo").innerHTML = Date();
+	}
+
+	button.onmouseout = function() {
+		   document.getElementById("demo").innerHTML = "";
+	}
+}
+
+window.onunload = function() {
+	alert( "!" );
+}
+</script>
+</head>
+<body onload="loaded();">
+<p>버튼을 클릭하면  <em>displayDate()</em> 함수가 실행 됩니다.</p>
+<button id="my-button">Try it</button>
+<p id="demo"></p>
+
+</body>
+</html>
